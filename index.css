@@ -1,0 +1,365 @@
+body,html{
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+
+}
+
+.container{
+    background-color:#000000;
+    padding:20px;
+    color:#ffffff;
+    top:0;
+    width:100%;
+}
+.nav-bar{
+    background-color:#000000;
+    color:#DE2121;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+.nav-items{
+    display:flex;
+    gap:20px;
+}
+.items{
+    color:#ffffff;
+    text-decoration:none;
+}
+.items:hover{
+    color:#DE2121;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.3s;
+    transform: scale(1.1);
+}
+.my-profile{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+}
+.profile-img{
+    height:25%;
+    width:35%;
+    border-radius:100px;
+}
+.profile-img:hover{
+    transform: scale(1.1);
+    transition:0.3s;
+    box-shadow: #C6180C 0px 0px 20px;
+}
+.home{
+    display:flex;
+    justify-content: space-around;
+    gap:2.5rem;
+    align-items:center;
+}
+.designation{
+    color:#DE2121;
+    font-weight:bold;
+}
+.project-list{
+    list-style-type:none;
+    padding-left:10px;
+}
+.heading{
+    font-size:2rem;
+}
+.para{
+    font-size:0.7rem;
+    color:#6D6464;
+}
+.about-me, .projects, .skills, .contact{
+    padding:20px;
+    margin-top:30px;
+    background-color:#1C1C1C;
+    border-radius:10px;
+}
+.sub-heading{
+    color:#DE2121;
+    font-size:1.5rem;
+}
+.skill-list{
+    list-style-type:none;
+    padding:10px;
+    display:flex;
+    gap:15px;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.about-me:hover{
+    box-shadow: #817e7c 0px 0px 20px;
+    transition:0.3s;
+    transform: scale(1.1);
+}
+.projects:hover{
+    box-shadow: #817e7c 0px 0px 20px;
+    transition:0.3s;
+    transform: scale(1.1);
+}
+.skills:hover{
+    box-shadow: #817e7c 0px 0px 20px;
+    transition:0.3s;
+    transform: scale(1.1);
+}
+.contact:hover{
+    box-shadow: #817e7c 0px 0px 20px;
+    transition:0.3s;
+    transform: scale(1.1);
+}
+.icon{
+    color:#ffffff;
+    border-radius:100%;
+    border: 2px solid;
+    background-color: #1C1C1C;
+    padding: 10px;
+}
+.contact-details{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:20px;
+}
+.contact-form{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);        
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    width:15rem;
+    display:flex;
+    flex-direction:column;
+}
+.form-item{
+    margin:0px;
+    padding:5px;
+}
+.input-box{
+    width:90%;
+
+}
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:flex-start;
+    height:10rem;
+}
+.contact-icons{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+.contact-para{
+    font-size:0.8rem;
+}
+.submit-btn{
+    align-self:flex-end;
+    margin-top:20px;
+    margin-right:10px;
+}
+.submit-btn:hover{
+    background-color:rgb(19, 19, 213);
+    color:#ffffff;
+    transition:0.3s;
+    transform: scale(1.1);
+    cursor:pointer;
+}
+#error-msg{
+    color:#FF0000;
+    font-size:0.7rem;
+    display:none;
+}
+.icon:hover{
+    box-shadow: #817e7c 0px 0px 20px;
+    transition:0.3s;
+    transform: scale(1.1);
+    cursor:pointer;
+}
+.footer{
+    background-color:#000000;
+    color:#DE2121;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+    font-size:0.8rem;}
+.mobile-nav-items{
+    display:none;
+    position:absolute;
+    top:0;
+    right:0;
+    margin:10px;
+    padding:10px;
+    width:20%;
+    height:20vh;
+}
+.menu-toggle{
+    display:none;
+    font-size:1.5rem;
+    background-color:#000000;
+    color:#DE2121;
+    border:none;
+    cursor:pointer;
+}
+.mobile-nav{
+    display:none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);        
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    width:15rem;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:0.6rem;
+}
+.message-box{
+    width:30%;
+    height:10rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);        
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    align-self:center;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.msg-head{
+    font-size:1rem;
+}
+.msg-para{
+    font-size:0.7rem;
+}
+
+@media (max-width:768px){
+    .heading{
+        font-size:1.5rem;
+    }
+    .web-head{
+        font-size:1.5rem;
+    }
+    .nav-items{
+        display:none;
+    }
+    .menu-toggle{
+        display:block;
+    }
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }   
+    .profile-img{
+        height:40%;
+        width:60%;
+    }
+    .contact-details{
+        flex-direction:column;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .contact-form{
+        width:70%;
+        margin:2rem auto;
+    }
+    .contact-info{
+        align-items:center;
+        text-align:center;
+    }
+    .nav-items{
+        flex-direction:column;
+        gap:10px;
+    }
+    .nav-bar{
+        text-align:center;
+    }
+    .my-profile{
+        align-items:center;
+        text-align:center;
+    }
+    .projects{
+        text-align:center;
+    }
+    .about-me{
+        text-align:center;
+    }
+    .skills{
+        text-align:center;
+    }
+    .skill-list{
+        justify-content:center;
+    }
+    .contact{
+        text-align:center;
+    }
+    .footer{
+        font-size:0.7rem;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    .menu-toggle{
+        display:none;
+    }
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }   
+    .profile-img{
+        height:40%;
+        width:60%;
+    }
+    .contact-details{
+        flex-direction:column;
+        align-items:center;
+    }
+    .contact-form{
+        width:100%;
+    }
+    .contact-info{
+        align-items:center;
+        text-align:center;
+    }
+    .nav-items{
+        flex-direction:column;
+        gap:10px;
+    }
+    .nav-bar{
+        text-align:center;
+    }
+    .my-profile{
+        align-items:center;
+        text-align:center;
+    }
+    .projects{
+        text-align:center;
+    }
+    .about-me{
+        text-align:center;
+    }
+    .skills{
+        text-align:center;
+    }
+    .skill-list{
+        justify-content:center;
+    }
+    .contact{
+        text-align:center;
+    }
+}
