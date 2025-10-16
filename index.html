@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="MyPortfolio.css">
+    <script src="https://kit.fontawesome.com/138c5cfde7.js" crossorigin="anonymous"></script>
+    <script src="MyPortfolio.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="nav-bar">
+            <h1 class="web-head">My Portfolio</h1>
+            <nav class="nav-items">
+                <a class="items" href="#home">Home</a>
+                <a class="items" href="#about">About Me</a>
+                <a class="items" href="#project">Projects</a>
+                <a class="items" href="#skills">Skills</a>
+                <a class="items" href="#contact">Contact</a>
+            </nav>
+            <div id="menu-toggle" class="menu-toggle">
+                <i class="fa-solid fa-bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </i>
+            </div>
+        </header>
+        <div class="mobile-nav-items" id="mobile-nav-items">
+                <nav class="mobile-nav">
+                <a class="items" href="#home">Home</a>
+                <a class="items" href="#about">About Me</a>
+                <a class="items" href="#project">Projects</a>
+                <a class="items" href="#skills">Skills</a>
+                <a class="items" href="#contact">Contact</a>
+            </nav>
+            </div>
+        <main class="my-profile">
+           <section id="home" class="home">
+            <img src="https://files.imagetourl.net/uploads/1760436873411-60d50474-c658-4d08-90c9-2c617b63dacc.jpg" class="profile-img"/>
+            <div class="details">
+                <h1 class="heading">Hi, It's PRADEEP<br/>I'm a <span class="designation">Web Developer</span></h1>
+                <p class="para">I'm a detail-oriented and resilient developer with a passion for building clean, responsive user interfaces and solving complex logic challenges.</p>
+            </div>
+           </section> 
+           <section id="about" class="about-me">
+            <h2 class="sub-heading">About Me</h2>
+            <p class="para">I am a web developer with a strong foundation in HTML, CSS, and JavaScript. I have experience working on various projects that involve creating responsive and user-friendly web applications. I am passionate about learning new technologies and improving my skills to deliver high-quality solutions.</p>
+           </section>
+           <section id="project" class="projects">
+            <h2 class="sub-heading">Projects</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="para">A personal portfolio website showcasing my projects and skills.</p>
+                </li>
+                <li class="project-item">
+                    <h3 class="project-title">Expenses Tracker(Python)</h3>
+                    <p class="para">A command-line tool that helps users to log and analyze monthly expenses. It reads and writes data to a CSV file, categorizes spending, and calculates total expenditure, remaining budget, and days left in the month.</p>
+                </li>
+                <li class="project-item">
+                    <h3 class="project-title">To-Do List App</h3>
+                    <p class="para">A simple to-do list application built with JavaScript to manage tasks efficiently.</p>
+                </li>
+            </ul>
+           </section>
+           <section id="skills" class="skills">
+            <h2 class="sub-heading">Skills</h2>
+            <ul class="skill-list">
+                <li class="skill-item"><i class="fa-brands fa-html5 fa-bounce" style="color: #f54e24;"></i> HTML</li>
+                <li class="skill-item"><i class="fa-brands fa-css3-alt fa-bounce" style="color: #74C0FC;"></i> CSS</li>
+                <li class="skill-item"><i class="fa-brands fa-square-js fa-bounce" style="color: #FFD43B;"></i> JavaScript</li>
+                <li class="skill-item"><i class="fa-brands fa-python fa-bounce" style="color: #FFD43B;"></i> Python</li>
+                <li class="skill-item"><i class="fa-solid fa-database fa-bounce" style="color: #f26d40;"></i> SQL</li>
+                <li class="skill-item"><i class="fa-brands fa-react fa-bounce" style="color: #61DAFB;"></i> React</li>
+                <li class="skill-item"><i class="fa-brands fa-node-js fa-bounce" style="color: #8CC84B;"></i> Node.js</li>
+            </ul>
+           </section> 
+           <section id="contact" class="contact">
+            <h2 class="sub-heading">Contact</h2>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h3 class="contact-text">Get in Touch <br><span class="contact-para">Feel free to reach out to me via email or connect with me on LinkedIn.</span></h3>
+                    <div class="contact-icons">
+                    <a class="icon" href="mailto:vasadipradeep70@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="icon" href="https://www.linkedin.com/in/pradeepVasadi93" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="icon" href="https://github.com/Pradeepvasadi-93"><i class="fa-brands fa-github"></i></a>
+                    <a class="icon" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                <form class="contact-form">
+                    <h6 class="form-item">First Name:</h6>
+                    <input type="text" id="first-name" placeholder="Enter your first name" class="input-box form-item"/>
+                    <h6 class="form-item">Last Name:</h6>
+                    <input type="text" id="last-name" placeholder="Enter your last name" class="input-box form-item"/>
+                    <h6 class="form-item">Email:</h6>
+                    <input type="email" id="email" placeholder="Enter your email" class="input-box form-item"/>
+                    <h6 class="form-item">Message:</h6>
+                    <textarea id="message" placeholder="Enter your message" class="input-box form-item"></textarea>
+                    <p id="error-msg">*Please fill all the fields</p>
+                    <button type="submit" id="submit-btn" class="submit-btn form-item">Submit</button>
+                </form>
+                </div>
+            </div>
+           </section>  
+           <section>
+            <footer class="footer">
+                <p class="footer-para">© 2025 Pradeep Vasadi. All rights reserved.</p>
+            </footer>
+           </section>
+           <div class="message-box" id="message-box">
+            <h1 class="msg-head">Thank You for Your Message! 🤝</h1>
+            <p class="msg-para">Your message has been successfully sent 💌. I will get back to you shortly 💭.</p>
+            <p class="msg-para">If you have any further questions, feel free to reach out!</p>
+           </div>  
+            
+        </main>
+    </div>
+    
+</body>
+</html>
